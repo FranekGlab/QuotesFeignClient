@@ -13,7 +13,7 @@ import java.util.List;
 public interface QuoteServerProxy {
 
     @GetMapping("/apiWithRequestParam")
-    Quote getQuoteByParam(@RequestParam("id") Long id);
+    Quote getQuoteByParam(@RequestParam Long id);
 
     @GetMapping("/apiWithHeader")
     List<Quote> getQuoteByHeader(@RequestHeader String requestId);
